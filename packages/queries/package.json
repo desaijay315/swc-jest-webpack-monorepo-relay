@@ -1,10 +1,11 @@
 {
-  "name": "@fakeddit/web",
+  "name": "@fakeddit/queries",
   "version": "0.0.1",
   "scripts": {
     "start:dev": "webpack serve --hot",
     "relay": "relay-compiler",
-    "copy-env": "cp .env.example .env"
+    "copy-env": "cp .env.example .env",
+    "test": "jest --maxWorkers=50%"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.7.2",

@@ -1,5 +1,3 @@
-const pkg = require('./package.json');
-
 var swcConfig = {
   jsc: {
     experimental: {
@@ -28,9 +26,8 @@ var swcConfig = {
     },
   },
 }
+
 module.exports = {
-  name: pkg.name,
-  displayName: pkg.name,
   testEnvironment: 'jsdom',
   testRegex: '(/__tests__/.*|(\\.|/)(test))\\.(j|t)sx?$',
   testPathIgnorePatterns: ['/node_modules/', './dist', '__generated__'],
